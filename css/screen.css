@@ -1,6 +1,19 @@
 /*------------------------------------*\
 #FONTS
 \*------------------------------------*/
+@font-face {
+    font-family: "Inter Web";
+    font-weight: 400;
+    src: url("../fonts/Inter-Regular.woff2") format("woff2");
+    font-display: auto;
+}
+
+@font-face {
+    font-family: "Inter Web";
+    font-weight: 600;
+    src: url("../fonts/Inter-SemiBold.woff2") format("woff2");
+    font-display: auto;
+}
 
 /*------------------------------------*\
 #Variables
@@ -25,7 +38,7 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Helvetica, arial, sans-serif;
+    font-family: "Inter Web", arial, sans-serif;
     color: #20223a;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -170,6 +183,10 @@ a:active {
 a:hover,
 a:focus {
     color: DeepPink;
+}
+
+label, input {
+    display: block;
 }
 
 /*------------------------------------*\
@@ -431,6 +448,33 @@ a:focus {
     ---
     Website main logo
 */
+.c-logo {
+    height: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.c-logo__symbol {
+    height: 100%;
+    display: block;
+}
+
+.c-logo__path {
+
+}
+
+.c-logo__path--1 {
+    fill: #20223A;
+}
+
+.c-logo__path--2 {
+    fill: #3385FF;
+}
+
+.c-logo__path--3 {
+    fill: #1b4186;
+}
+
 
 /*
     Component: Card
@@ -443,6 +487,14 @@ a:focus {
     ---
     Everything form related here
 */
+.c-form-field {
+}
+
+
+.c-form-field--option {
+    display: flex;
+    align-items: center;
+}
 
 /*
     Component: Input
