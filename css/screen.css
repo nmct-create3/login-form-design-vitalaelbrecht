@@ -177,15 +177,19 @@ a {
 
 a:visited,
 a:active {
-    color: HotPink;
+    color: #3385FF;
 }
 
 a:hover,
 a:focus {
-    color: DeepPink;
+    color: #1B4186;
 }
 
-label, input {
+label {
+    display: block;
+}
+
+input {
     display: block;
 }
 
@@ -481,6 +485,20 @@ label, input {
     ---
     Card with box shadow
 */
+.c-card {
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.c-card__body {
+    padding: 48px;
+}
+
+.c-card__title {
+    text-align: center;
+    padding-top: 48px;
+}
 
 /*
     Component: Forms
@@ -503,10 +521,32 @@ label, input {
 */
 
 .c-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e2e3e7;
+    border-radius: 3px;
+    font-family: inherit;
+    color: inherit;
+
+    font-size: 16px;
+    line-height: 24px;
+    padding: 11px 16px;
+
+    outline: none;
 }
 
+.c-input::placeholder {
+    color: inherit;
+}
 .c-input:focus {
+    border-color:#3385FF;
+    box-shadow: h-offset v-offset blur spread color;
+    box-shadow: 0 0 0 3px #4F95FF4d;
 }
 
 /*
@@ -532,19 +572,29 @@ label, input {
 */
 
 .c-button {
+    border-color: #2E77E6;
+    border-radius: 3px;
+    margin: 24px 0px;
+    padding: 14px 0px;
+    width: 100%;
+    background: #3385FF;
 
+    color: #FFFFFF;
+    font-weight: 600;
 }
 
 .c-button:hover {
-
+    background: #4F95FF;
 }
 
 .c-button:focus {
-
+    border-color:#3385FF;
+    box-shadow: h-offset v-offset blur spread color;
+    box-shadow: 0 0 0 3px #4F95FF4d;
 }
 
 .c-button:active {
-
+    background-color: #2E77E6;
 }
 
 .c-button--block {
